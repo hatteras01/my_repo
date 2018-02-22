@@ -1,19 +1,28 @@
-<!DOCTYPE HTML><html><head>
+<!DOCTYPE HTML><html>
+<head>
 <title>Calculadora</title><meta charset="utf-8">
+
 <script type="text/javascript">
 function cube(){
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value,3);
 	}
+
 function sin(){
 	var num = document.getElementById("n1");
 	num.value = (Math.PI/180)*num.value;
 
 }
 
+function forth(){
+	var num = document.getElementById("n1");
+	num.value = Math.pow(num.value,4)
+	}
 	
 </script>
+
 </head>
+
 <body>
 <h1>Calculadora de Juan A. Rivas Sáez</h1>
 
@@ -21,8 +30,11 @@ function sin(){
 	<input type="text" id="n1"><p>
 	
 	<button onClick="cube()">x^3</button>
+
 	<button onClick="sin()">sin(x)</button>
 	
+	<button onClick="forth()">x^4</button>
+
 
 </body>
 </html>
